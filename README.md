@@ -1,4 +1,4 @@
-# LLM101: Foundational NLP Representations & Micrograd
+# Foundational NLP Representations & Micrograd
 
 This repository contains educational, step-by-step Jupyter notebooks that demonstrate foundational concepts in Natural Language Processing (NLP) and automatic differentiation. The goal is to provide clear, well-documented code and explanations for core representation techniques and the basics of building neural networks from scratch.
 
