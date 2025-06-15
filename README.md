@@ -43,7 +43,7 @@ This repository contains educational, step-by-step Jupyter notebooks that demons
 
 1. **Clone the repository:**
    ```sh
-   git clone <repo-url>
+   git clone <raghulchandramouli/Spelled-out-intro-to-Neural-Networks>
    cd LLM101
    ```
 
