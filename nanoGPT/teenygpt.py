@@ -1,0 +1,38 @@
+# dependencies
+import torch
+import torch.nn as nn
+from torch.nn import functional as F
+
+# Hyperparameter:
+
+batch_size = 64 # how many independend sequences we will be processing parallely
+block_size = 256 # max context length
+max_iters = 5000 # total no's of training steps
+eval_interval = 500 # eval modal after 500 steps
+learning_rate = 3e-4 # lr for the model
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+eval_iters = 200 # no of mini-batchs to avg over during evals
+n_embd = 384 # size of embedding tokens
+n_head = 6 # num of attn-heads
+n_layer = 6 # num of transformer block
+dropout = 0.2 # dp probs
+
+# Data Loading and Encoding:
+
+torch.manual_seed(1337)
+
+with open('input.txt', 'r', encoding='utf-8') as f:
+    # Loads shakespeare text from file
+    text = f.read()
+    
+chars = sorted(list(set(text))) # finds the set of all unique chars
+vocab_size = len(chars) # builds vocab
+
+# building a lookup table
+stoi = { ch:i for i, ch in enumerate(chars)}
+itos = { i:ch for i, ch in enumerate(chars)}
+
+# encoder & decoder builder
+
+    
+    
